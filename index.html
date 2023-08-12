@@ -14,19 +14,37 @@
     <title>Frontend Mentor | Age calculator app</title>
 </head>
 <body>
-    <main>
-        Day
-        DD
-  
-        Month
-        MM
-  
-        Year
-        YYYY
-  
-        -- years
-        -- months
-        -- days
+    <main class="calendario">
+        <form class="row g-3 formulario">
+            <div class="col-sm-4 input">
+                <label for="input-day" class="form-label">DAY</label>
+                <input type="text" placeholder="DD" class="form-control" id="input-day">
+                <p class="texto-error" id="texto-error-day"></p>
+            </div>
+            <div class="col-sm-4 input">
+                <label for="input-month" class="form-label">MONTH</label>
+                <input type="text" placeholder="MM" class="form-control" id="input-month">
+                <p class="texto-error" id="texto-error-month"></p>
+            </div>
+            <div class="col-sm-4 input">
+                <label for="input-year" class="form-label">YEAR</label>
+                <input type="text" placeholder="YYYY" class="form-control" id="input-year">
+                <p class="texto-error" id="texto-error-year"></p>
+            </div>
+        </form>        
+        
+        <div class="divider">
+            <button class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+            </button>
+        </div>
+        
+        <div class="edad">
+            <p><span class="num" id="years">--</span> years</p>
+            <p><span class="num" id="months">--</span> months</p>
+            <p><span class="num" id="days">--</span> days</p>
+        </div>
+        
     </main>
   
     <footer class="attribution">
