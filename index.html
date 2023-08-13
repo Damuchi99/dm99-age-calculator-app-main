@@ -17,24 +17,24 @@
     <main class="calendario">
         <form class="row g-3 formulario">
             <div class="col-sm-4 input">
-                <label for="input-day" class="form-label">DAY</label>
+                <label for="input-day" class="form-label" id="day-title">DAY</label>
                 <input type="text" placeholder="DD" class="form-control" id="input-day">
                 <p class="texto-error" id="texto-error-day"></p>
             </div>
             <div class="col-sm-4 input">
-                <label for="input-month" class="form-label">MONTH</label>
+                <label for="input-month" class="form-label" id="month-title">MONTH</label>
                 <input type="text" placeholder="MM" class="form-control" id="input-month">
                 <p class="texto-error" id="texto-error-month"></p>
             </div>
             <div class="col-sm-4 input">
-                <label for="input-year" class="form-label">YEAR</label>
+                <label for="input-year" class="form-label" id="year-title">YEAR</label>
                 <input type="text" placeholder="YYYY" class="form-control" id="input-year">
                 <p class="texto-error" id="texto-error-year"></p>
             </div>
         </form>        
         
         <div class="divider">
-            <button class="circle">
+            <button class="boton-calcular" id="boton-calcular">
                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
             </button>
         </div>
